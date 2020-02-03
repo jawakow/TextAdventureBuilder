@@ -1,0 +1,25 @@
+﻿<Window x:Class="TextAdventureBuilder.GameWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TextAdventureBuilder"
+        mc:Ignorable="d"
+        Title="GameWindow" Height="450" Width="800">
+    <Grid RenderTransformOrigin="0.634,0.782">
+        <TextBox HorizontalAlignment="Left" Margin="21,23,0,0" IsReadOnly="True" Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eget rutrum odio, non congue dolor. Morbi id rhoncus risus, ornare volutpat nisi. Nam dictum, enim nec fermentum feugiat, metus urna imperdiet augue, vel ultricies ex leo eget nunc. Donec convallis lorem molestie, ultricies augue vitae, tincidunt nisl. Nunc laoreet nisi ipsum, quis molestie sem aliquet sit amet. Suspendisse at egestas odio. Aenean vel lobortis eros, pellentesque lobortis nisi. Proin sed venenatis orci. Maecenas hendrerit ligula id tellus ullamcorper semper. Donec ac arcu nisi. Donec nisi urna, faucibus placerat semper ut, mattis et eros. Praesent et volutpat tortor. Praesent orci leo, lacinia efficitur dignissim sed, elementum quis enim. Aliquam non justo nec sapien convallis convallis. Praesent bibendum sit amet neque at scelerisque." TextWrapping="Wrap" VerticalAlignment="Top" Width="585" Height="209"/>
+        <Button Content="North" FontWeight="Bold" HorizontalAlignment="Left" Margin="482,271,0,0" VerticalAlignment="Top" Click="NorthButton_Click" Width="50" Height="35" ToolTip="Go North">
+            <!--<Image Source="C:\Users\Administrator1\source\repos\TextAdventureBuilder\TextAdventureBuilder\Images\North.jpg"></Image>-->
+        </Button>
+        <Button Content="South" FontWeight="Bold" HorizontalAlignment="Left" Margin="482,372,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.457,0.651" Click="SouthButton_Click" Width="50" Height="35" ToolTip="Go South"/>
+        <Button Content="East" FontWeight="Bold" HorizontalAlignment="Left" Margin="543,322,0,0" VerticalAlignment="Top" Click="EastButton_Click" Width="50" Height="35" ToolTip="Go East"/>
+        <Button Content="West" FontWeight="Bold" HorizontalAlignment="Left" Margin="422,322,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.473,0.664" Click="WestButton_Click" Width="50" Height="34" ToolTip="Go West"/>
+        <Button HorizontalAlignment="Left" Margin="477,311,0,0" VerticalAlignment="Top" Height="56" Click="InventoryButton_Click" ToolTip="Show Inventory">
+            <Image Source="Images\inventory.png"></Image>
+        </Button>
+        <Button Content="Search" HorizontalAlignment="Left" Margin="658,365,0,0" VerticalAlignment="Top" Width="70" Height="34" FontWeight="Bold" Click="SearchButton_Click" ToolTip="Search the room for anything useful!"/>
+        <TextBox HorizontalAlignment="Left" Margin="21,277,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="293" Height="52"/>
+        <Label Content="Input command and press enter!" HorizontalAlignment="Left" Margin="21,246,0,0" VerticalAlignment="Top" Width="212" FontWeight="Bold"/>
+
+    </Grid>
+</Window>
