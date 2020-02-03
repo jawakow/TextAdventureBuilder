@@ -7,6 +7,8 @@ namespace TextAdventureBuilder
 		public Player ()
 		{
 		}
+        string inventory;
+        string weapon;
 	}
 }
 
