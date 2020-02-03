@@ -7,6 +7,10 @@ namespace TextAdventureBuilder
 		public Inventory ()
 		{
 		}
+        string name;
+        string description;
+        string quantity;
+        string 
 	}
 }
 

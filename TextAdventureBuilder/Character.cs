@@ -2,14 +2,13 @@
 
 namespace TextAdventureBuilder
 {
-	public class Character
+	public class Character : Entity
 	{
 		public Character ()
 		{
 		}
 
-        string name;
-        string description;
+        
 	}
 }
 
