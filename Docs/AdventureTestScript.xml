@@ -1,0 +1,51 @@
+<TextAdventureScript>
+	<Player>
+		<name> Test Player </name>
+		<description> A Test adventurer in a dark land </description>
+		<location></location>
+		<inventory>
+		</inventory>
+		<health>100</health>
+		<weapon></weapon>
+	</Player>
+	
+	<Rooms>
+		<Room>
+			<name> Cave entrance </name>
+			<description> It is the entrance to a dark musky cave </description>
+			<contents>
+				<item>a torch</item>
+				<item> a big rock </item>
+				<item> bat </item>
+			</contents>
+			<roomId> 1 </roomId>
+			<nDoorRoomId> null </nDoorRoomId>
+			<nDoorIsAccessible> false </nDoorIsAccessible>
+			<sDoorRoomId> 2 </sDoorRoomId>
+			<sDoorIsAccessible> true </sDoorIsAccessible>
+			<eDoorRoomId> null </eDoorRoomId>
+			<eDoorIsAcessible> false </eDoorIsAcessible>
+			<wDoorRoomId> null </wDoorRoomId>
+			<wDoorIsAccessible> false </wDoorIsAccessible>
+		</Room>
+		
+		<Room>
+			<name>Cave foyeur </name>
+			<description> It a dim lightly </description>
+			<contents>
+				<item>a torch</item>
+				<item> a big rock </item>
+				<item> bat </item>
+			</contents>
+			<roomId>2</roomId>
+			<nDoorRoomId> 1 </nDoorRoomId>
+			<nDoorIsAccessible> true </nDoorIsAccessible>
+			<sDoorRoomId>null </sDoorRoomId>
+			<sDoorIsAccessible> false</sDoorIsAccessible>
+			<eDoorRoomId> null </eDoorRoomId>
+			<eDoorIsAcessible> false</eDoorIsAcessible>
+			<wDoorRoomId> null </wDoorRoomId>
+			<wDoorIsAccessible> false</wDoorIsAccessible>
+		</Room>
+	</Rooms>
+</TextAdventureScript>
