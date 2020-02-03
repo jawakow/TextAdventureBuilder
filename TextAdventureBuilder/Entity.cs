@@ -7,6 +7,8 @@ namespace TextAdventureBuilder
 		public Entity ()
 		{
 		}
+        string name;
+        string description;
 	}
 }
 
