@@ -7,6 +7,9 @@ namespace TextAdventureBuilder
 		public Character ()
 		{
 		}
+
+        string name;
+        string description;
 	}
 }
 

@@ -7,6 +7,8 @@ namespace TextAdventureBuilder
 		public Weapon ()
 		{
 		}
+        string name;
+        int power;
 	}
 }
 
