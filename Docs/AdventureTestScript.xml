@@ -19,14 +19,14 @@
 				<item> bat </item>
 			</contents>
 			<roomId> 1 </roomId>
-			<nDoorRoomId> null </nDoorRoomId>
-			<nDoorIsAccessible> false </nDoorIsAccessible>
-			<sDoorRoomId> 2 </sDoorRoomId>
-			<sDoorIsAccessible> true </sDoorIsAccessible>
-			<eDoorRoomId> null </eDoorRoomId>
-			<eDoorIsAcessible> false </eDoorIsAcessible>
-			<wDoorRoomId> null </wDoorRoomId>
-			<wDoorIsAccessible> false </wDoorIsAccessible>
+			<northDoorRoomId> null </northDoorRoomId>
+			<northDoorIsAccessible> false </northDoorIsAccessible>
+			<southDoorRoomId> 2 </southDoorRoomId>
+			<southDoorIsAccessible> true </southDoorIsAccessible>
+			<eastDoorRoomId> null </eastDoorRoomId>
+			<eastDoorIsAcessible> false </eastDoorIsAcessible>
+			<westDoorRoomId> null </westDoorRoomId>
+			<westDoorIsAccessible> false </westDoorIsAccessible>
 		</Room>
 		
 		<Room>
@@ -38,14 +38,14 @@
 				<item> bat </item>
 			</contents>
 			<roomId>2</roomId>
-			<nDoorRoomId> 1 </nDoorRoomId>
-			<nDoorIsAccessible> true </nDoorIsAccessible>
-			<sDoorRoomId>null </sDoorRoomId>
-			<sDoorIsAccessible> false</sDoorIsAccessible>
-			<eDoorRoomId> null </eDoorRoomId>
-			<eDoorIsAcessible> false</eDoorIsAcessible>
-			<wDoorRoomId> null </wDoorRoomId>
-			<wDoorIsAccessible> false</wDoorIsAccessible>
+			<northDoorRoomId> 1 </northDoorRoomId>
+			<northDoorIsAccessible> true </northDoorIsAccessible>
+			<southDoorRoomId>null </southDoorRoomId>
+			<southDoorIsAccessible> false</southDoorIsAccessible>
+			<eastDoorRoomId> null </eastDoorRoomId>
+			<eastDoorIsAcessible> false</eastDoorIsAcessible>
+			<westDoorRoomId> null </westDoorRoomId>
+			<westDoorIsAccessible> false</westDoorIsAccessible>
 		</Room>
 	</Rooms>
 </TextAdventureScript>
