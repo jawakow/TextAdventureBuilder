@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Xml;
 
 namespace TextAdventureBuilder
 {
@@ -6,7 +7,7 @@ namespace TextAdventureBuilder
 	{
 		public static void Main (string[] args)
 		{
-			Console.WriteLine ("Hello World!");
+			XmlDocument document = new XmlDocument(); 
 		}
 	}
 }
