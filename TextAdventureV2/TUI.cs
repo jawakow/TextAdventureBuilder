@@ -1,16 +1,20 @@
 ﻿using System;
 
-public class TUI
+namespace TextAdventureV2
 {
-	public string playerName;
-	
-	public TUI()
-	{
-	}
 
-	void Run()
-    {
-		Console.Clear();
-		playername = Console.ReadLine("Enter player name");
-    }
+	public class TUI
+	{
+		public string playerName;
+
+		public TUI()
+		{
+		}
+
+		public void Run()
+		{
+			Console.Clear();
+			playername = Console.ReadLine("Enter player name");
+		}
+	}
 }

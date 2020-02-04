@@ -9,12 +9,14 @@ namespace TextAdventureV2
     {
         static void Main(string[] args)
         {
+            // run TUI first
+            tui = new TUI();
+            tui.Run();
+            // Adventure adventure = new Adventure();
+            // MainActivity mainActivity = new MainActivity(adventure);
+            // mainActivity.CheckCompletion();
 
-            Adventure adventure = new Adventure();
-            MainActivity mainActivity = new MainActivity(adventure);
-            mainActivity.CheckCompletion();
-
-            Console.WriteLine("Hello World!");
+            // Console.WriteLine("Hello World!");
             //XmlTextReader textReader = new XmlTextReader("../../../../Docs/AdventureTestScript.xml");
             //textReader.Read();
 
@@ -25,17 +27,17 @@ namespace TextAdventureV2
 
             //}
 
-            XmlDocument xDoc = new XmlDocument();
-            xDoc.Load("../../../../Docs/AdventureTestScript.xml");
-            XmlElement node = (XmlElement)xDoc.SelectSingleNode("/Adventure/Rooms/Room");
+            // XmlDocument xDoc = new XmlDocument();
+            // xDoc.Load("../../../../Docs/AdventureTestScript.xml");
+            // XmlElement node = (XmlElement)xDoc.SelectSingleNode("/Adventure/Rooms/Room");
 
-            string neededText = node.InnerText;
+            // string neededText = node.InnerText;
 
-            Console.WriteLine(neededText);
-            Console.WriteLine(neededText.GetType());
+            // Console.WriteLine(neededText);
+            // Console.WriteLine(neededText.GetType());
 
-            string contents = File.ReadAllText(neededText);
-            XmlSerializer serializer = new XmlSerializer(typeof(Room));
+            // string contents = File.ReadAllText(neededText);
+            // XmlSerializer serializer = new XmlSerializer(typeof(Room));
             //StringReader rdr = new StringReader(contents);
             //User resultingMessage = (User)serializer.Deserialize(rdr);
 
