@@ -19,27 +19,27 @@ namespace TextAdventureBuilder
 		public int Move(string direction, Room room)
 		{
 	
-			if (direction = "N" && room.isNorthAccessible)
+			if (direction == "N" && room.isNorthAccessible)
 				{
 				this.roomId = room.northDoorRoomId;
 				return 1;
 			}
 
-			if (direction = "S" && room.isSouthAccessible)
+			if (direction == "S")
 				{
 				this.roomId = room.southDoorRoomId;
 				return 1;
 			}
 
-			if (direction = "W" && room.isWestAccessible)
+			if (direction == "W" && room.isWestAccessible)
 				{
 				this.roomId = room.westDoorRoomId;
 				return 1;
 			}
 
-			if (direction = "E" && room.isEastAccessible)
+			if (direction == "E" && room.isEastAccessible)
 				{
-				this.roomId = room.EastDoorRoomId;
+				this.roomId = room.eastDoorRoomId;
 				return 1;
 			}
 
