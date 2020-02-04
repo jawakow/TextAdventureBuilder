@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace TextAdventureBuilder
+namespace TextAdventureV2
 {
 	public class Player : Character
 	{
@@ -19,25 +19,25 @@ namespace TextAdventureBuilder
 		public int Move(string direction, Room room)
 		{
 	
-			if (direction == "N" && room.isNorthAccessible)
+			if (direction == "N" || direction == "North" && room.isNorthAccessible)
 				{
 				this.roomId = room.northDoorRoomId;
 				return 1;
 			}
 
-			if (direction == "S")
+			if (direction == "S" || direction == "South" && room.isSouthAccessible)
 				{
 				this.roomId = room.southDoorRoomId;
 				return 1;
 			}
 
-			if (direction == "W" && room.isWestAccessible)
+			if (direction == "W" || direction == "West" && room.isWestAccessible)
 				{
 				this.roomId = room.westDoorRoomId;
 				return 1;
 			}
 
-			if (direction == "E" && room.isEastAccessible)
+			if (direction == "E" || direction == "East" && room.isEastAccessible)
 				{
 				this.roomId = room.eastDoorRoomId;
 				return 1;

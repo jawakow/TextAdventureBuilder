@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace TextAdventureBuilder
+namespace TextAdventureV2
 {
 	public class Room : Entity
 	{

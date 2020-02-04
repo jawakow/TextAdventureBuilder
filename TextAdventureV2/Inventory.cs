@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace TextAdventureBuilder
+namespace TextAdventureV2
 {
 	public class Inventory
 	{
