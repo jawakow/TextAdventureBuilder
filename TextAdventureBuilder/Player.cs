@@ -5,14 +5,15 @@ namespace TextAdventureBuilder
 {
 	public class Player : Character
 	{
-		string weapon;
-		string health;
-		int roomId;
-		Inventory inventory;
-		List<int> location;
+		public string weapon;
+		public string health;
+		public int roomId;
+		public Inventory inventory;
+		public List<int> location;
 
 		public Player ()
 		{
+
 		}
 		
 		// return 1 if movement successful, otherwise return 0			
@@ -39,7 +40,7 @@ namespace TextAdventureBuilder
 
 			if (direction = "E" && room.isEastAccessible)
 				{
-				this.roomId = room.EastDoorRoomId;
+				this.roomId = room.eastDoorRoomId;
 				return 1;
 			}
 
