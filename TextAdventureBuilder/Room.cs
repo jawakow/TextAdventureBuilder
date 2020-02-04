@@ -4,17 +4,16 @@ namespace TextAdventureBuilder
 {
 	public class Room : Entity
 	{
-        string Id;
-        string northDoorRoomId;
-        string southDoorRoomId;
-        string eastDoorRoomId;
-        string westDoorRoomId;
-        string isNorthAccessible;
-        string isSouthAccessible;
-        string isEastAccessible;
-        string isWestAccessible;
-        string[] contents;
-        bool isDark;
+        public string Id;
+        public string northDoorRoomId;
+        public string southDoorRoomId;
+        public string eastDoorRoomId;
+        public string westDoorRoomId;
+        public string isNorthAccessible;
+        public string isSouthAccessible;
+        public string isEastAccessible;
+        public string isWestAccessible;
+        public bool isDark;
 
         public Room ()
 		{
