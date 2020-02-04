@@ -9,6 +9,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using TextAdventureBuilderGui;
 
 namespace TextAdventureBuilder
 {
@@ -17,9 +18,12 @@ namespace TextAdventureBuilder
     /// </summary>
     public partial class GameWindow : Window
     {
+        Handler handler;
+
         public GameWindow()
         {
             InitializeComponent();
+            handler = new Handler(this);
         }
 
         private void NorthButton_Click(object sender, RoutedEventArgs e)
@@ -49,7 +53,7 @@ namespace TextAdventureBuilder
 
         private void SearchButton_Click(object sender, RoutedEventArgs e)
         {
-
+            handler.SearchRoom();
         }
     }
 }

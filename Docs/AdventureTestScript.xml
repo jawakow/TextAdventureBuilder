@@ -1,4 +1,10 @@
-<TextAdventureScript>
+<Adventure>
+	<name>Test adventure</name>
+	<description>test adventure description</description>
+	<openingDialog> test dialog</openingDialog>
+	<completionZoneId></completionZoneId>
+	<completionMessage> you win</completionMessage>
+	
 	<Player>
 		<name> Test Player </name>
 		<description> A Test adventurer in a dark land </description>
@@ -48,4 +54,4 @@
 			<westDoorIsAccessible> false</westDoorIsAccessible>
 		</Room>
 	</Rooms>
-</TextAdventureScript>
+</Adventure>

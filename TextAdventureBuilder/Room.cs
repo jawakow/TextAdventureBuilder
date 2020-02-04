@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace TextAdventureBuilder
 {
@@ -13,13 +14,25 @@ namespace TextAdventureBuilder
         string isSouthAccessible;
         string isEastAccessible;
         string isWestAccessible;
-        string[] contents;
+        Item[] contents;
         bool isDark;
 
         public Room ()
 		{
 		}
-        
+
+        public List<string> SearchRoom()
+        {
+            List<string> roomContents = new List<string>();
+            string itemName;
+            foreach(Item item in contents)
+            {
+                itemName = item.name + "/n";
+                roomContents.Add(itemName);
+            }
+
+            return roomContents;
+        }  
 	}
 }
 
