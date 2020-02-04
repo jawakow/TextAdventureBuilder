@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TextAdventureBuilder
 {
-    public class AdventureClass
+    public class Adventure
     {
         public string name;
         public string description;
