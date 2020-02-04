@@ -23,14 +23,17 @@ namespace TextAdventureV2
 
         public void SearchRoom()
         {
-            List<string> itemList;
-            ////foreach (string item in itemList)
-            ////{
-            ////    Console.WriteLine(item);
-            ////}
+            Room room = adventure.rooms[adventure.pc.roomId];
+            var itemList = room.SearchRoom();
+            foreach (string item in itemList)
+            {
+                Console.WriteLine(item);
+            }
             Console.WriteLine("You search the room");
             CheckCompletion();
         }
+
+
 
         public void GetInput()
         {
@@ -40,11 +43,17 @@ namespace TextAdventureV2
             {
                 SearchRoom();
             }
+            else 
+            {
+                MovePlayer(input);
+            }
         }
 
-        public void MovePlayer()
+        public void MovePlayer(string input)
         {
-            adventure.pc.Move(input, )
+            Room room = adventure.rooms[adventure.pc.roomId];
+            adventure.pc.Move(input, room);
+            Console.WriteLine();
         }
     }
 }

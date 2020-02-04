@@ -4,8 +4,8 @@ namespace TextAdventureV2
 {
 	public class Entity
 	{
-		string name;
-		string description;
+		public string name;
+		public string description;
 
 		public Entity ()
 		{
