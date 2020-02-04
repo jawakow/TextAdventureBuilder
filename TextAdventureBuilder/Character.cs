@@ -7,8 +7,6 @@ namespace TextAdventureBuilder
 		public Character ()
 		{
 		}
-
-        
 	}
 }
 

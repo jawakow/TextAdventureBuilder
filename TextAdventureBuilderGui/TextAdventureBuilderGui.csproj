@@ -59,6 +59,7 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Handler.cs" />
     <Compile Include="StartWindow.xaml.cs">
       <DependentUpon>StartWindow.xaml</DependentUpon>
     </Compile>
@@ -102,7 +103,12 @@
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\TextAdventureBuilder\TextAdventureBuilder.csproj">
+      <Project>{71fca2b7-d3e7-4bab-b4a2-ede582459397}</Project>
+      <Name>TextAdventureBuilder</Name>
+    </ProjectReference>
+  </ItemGroup>
   <ItemGroup>
     <Resource Include="Images\compass.png" />
     <Resource Include="Images\Inventory.png" />

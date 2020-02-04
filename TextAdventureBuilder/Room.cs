@@ -2,11 +2,8 @@
 
 namespace TextAdventureBuilder
 {
-	public class Room
+	public class Room : Entity
 	{
-		public Room ()
-		{
-		}
         string Id;
         string northDoorRoomId;
         string southDoorRoomId;
@@ -18,6 +15,11 @@ namespace TextAdventureBuilder
         string isWestAccessible;
         string[] contents;
         bool isDark;
+
+        public Room ()
+		{
+		}
+        
 	}
 }
 
