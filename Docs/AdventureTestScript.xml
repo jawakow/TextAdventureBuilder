@@ -2,7 +2,7 @@
 	<name>Test adventure</name>
 	<description>test adventure description</description>
 	<openingDialog> test dialog</openingDialog>
-	<completionZoneId></completionZoneId>
+	<completionZoneId>3</completionZoneId>
 	<completionMessage> you win</completionMessage>
 	
 	<Player>

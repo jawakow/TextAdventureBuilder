@@ -18,6 +18,8 @@ namespace TextAdventureV2
             XmlTextReader textReader = new XmlTextReader("../../../../Docs/AdventureTestScript.xml");
             textReader.Read();
 
+
+
             tui = new TUI();
             tui.Run();
 

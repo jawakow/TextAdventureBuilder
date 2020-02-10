@@ -7,6 +7,6 @@ namespace TextAdventureV2
 {
     class XMLParser
     {
-       
+        XmlDocument xDoc = new XmlDocument();
     }
 }
