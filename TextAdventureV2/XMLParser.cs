@@ -9,9 +9,6 @@ namespace TextAdventureV2
 {
     class XMLParser
     {
-<<<<<<< HEAD
-        XmlDocument xDoc = new XmlDocument();
-=======
         public Adventure ParseXml(string fileName)
         { 
             ////XmlSerializer serializer = new XmlSerializer(typeof(Adventure));
@@ -63,7 +60,5 @@ namespace TextAdventureV2
 
             return adventure;
         }
-
->>>>>>> 668b07423da69ea18dd1e988e3c81273c3a289dd
     }
 }
