@@ -9,7 +9,7 @@ namespace TextAdventureV2
         public MainActivity(Adventure adventure)
         {
             this.adventure = adventure;
-            // Console.WriteLine("Hello there");
+            Console.WriteLine(adventure.openDialog);
             CheckCompletion();
         }
 

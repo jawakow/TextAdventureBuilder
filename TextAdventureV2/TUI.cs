@@ -14,8 +14,9 @@ namespace TextAdventureV2
 
 		
 		
-		public void play(MainActivity activity)
+		public void play()
 		{
+			
 			this.welcomeScreen();
 			this.setStartupPos();
 			for (int i=0; i<100; i++)
