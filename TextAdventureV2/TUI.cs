@@ -12,6 +12,41 @@ namespace TextAdventureV2
 		{
 		}
 
+		
+		
+		public void play()
+		{
+			this.welcomeScreen();
+			this.setStartupPos();
+			for (int i=0; i<100; i++)
+			{
+				if (Console.KeyAvailable)
+				{
+					var key = Console.ReadKey().Key;
+					// Console.WriteLine(key);
+					switch (key)
+					{
+						case ConsoleKey.LeftArrow:
+							this.moveToAnotherRoom("W");
+							return;
+						case ConsoleKey.RightArrow:
+							this.moveToAnotherRoom("E");
+							return;
+						case ConsoleKey.UpArrow:
+							this.moveToAnotherRoom("N");
+							return;
+						case ConsoleKey.DownArrow:
+							this.moveToAnotherRoom("S");
+							return;
+					}
+					
+					
+				}
+			}
+
+			
+
+		}
 		public void welcomeScreen()
 		{
 			Console.Clear();
@@ -60,7 +95,7 @@ namespace TextAdventureV2
 			Console.SetCursorPosition(30, 0);
 			Console.WriteLine("Weapons: None");
 			this.plotScreen();
-			Console.ReadKey();
+			
 		}
 		public void plotRoom(int x_pos, int y_pos)
 		{
@@ -70,14 +105,37 @@ namespace TextAdventureV2
 			Console.WriteLine("│ │");
 			Console.SetCursorPosition(x_pos, y_pos + 2);
 			Console.WriteLine("└─┘");
+
+			
 		}
 
 		public void moveToAnotherRoom(string direction)
 		{
 			int origRow = Console.CursorTop;
 			int origCol = Console.CursorLeft;
+			if (direction == "S")
+			{
+				Console.WriteLine(" ");
+				Console.SetCursorPosition(origCol, origRow + 3);
+				Console.WriteLine("@");
+			}
+
+			if (direction == "N")
+			{
+				Console.WriteLine(" ");
+				Console.SetCursorPosition(origCol, origRow - 3);
+				Console.WriteLine("@");
+			}
 
 		}
+
+		public void setStartupPos()
+		{
+			Console.SetCursorPosition(2, 5);
+			Console.WriteLine("@");
+		}
+
+		
 
 
 
