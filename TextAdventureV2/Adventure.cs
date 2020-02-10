@@ -18,5 +18,6 @@ namespace TextAdventureV2
         public int completionZoneId;
         public string completionMessage;
         public bool isCompleted = false;
+        public bool hasStarted = true;
     }
 }

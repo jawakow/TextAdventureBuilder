@@ -6,11 +6,23 @@ namespace TextAdventureV2
     public class MainActivity
     {
         Adventure adventure = new Adventure();
+       
+
+
         public MainActivity(Adventure adventure)
         {
             this.adventure = adventure;
-            Console.WriteLine("Hello there");
+            CheckStart();
             CheckCompletion();
+        }
+
+        public void CheckStart()
+        {
+            if (adventure.hasStarted)
+            {
+                Console.WriteLine(adventure.openDialog);
+                adventure.hasStarted = false;
+            }
         }
 
         public void CheckCompletion()
