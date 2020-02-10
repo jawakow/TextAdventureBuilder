@@ -19,6 +19,7 @@ namespace TextAdventureV2
 
         public Room ()
 		{
+            push
 		}
 
         public List<string> SearchRoom()
