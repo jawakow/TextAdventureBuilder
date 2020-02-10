@@ -23,6 +23,7 @@ namespace TextAdventureV2
 
         public Room ()
 		{
+            
 		}
 
         public List<string> SearchRoom()
