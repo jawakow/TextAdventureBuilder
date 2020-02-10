@@ -15,14 +15,15 @@ namespace TextAdventureV2
 
             Adventure adventure = xmlParser.ParseXml("../../../../Docs/AdventureTestScript.xml");
             MainActivity mainActivity = new MainActivity(adventure);
-            TUI tui = new TUI();
-            tui.play();
+
             //mainActivity.CheckCompletion();
 
             //Console.WriteLine("Hello World!");
             //XmlTextReader textReader = new XmlTextReader("../../../../Docs/AdventureTestScript.xml");
             //textReader.Read();
 
+            TUI tui = new TUI();
+            tui.play(mainActivity);
 
 
 
