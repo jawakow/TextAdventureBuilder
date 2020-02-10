@@ -6,23 +6,11 @@ namespace TextAdventureV2
     public class MainActivity
     {
         Adventure adventure = new Adventure();
-       
-
-
         public MainActivity(Adventure adventure)
         {
             this.adventure = adventure;
-            CheckStart();
+            // Console.WriteLine("Hello there");
             CheckCompletion();
-        }
-
-        public void CheckStart()
-        {
-            if (adventure.hasStarted)
-            {
-                Console.WriteLine(adventure.openDialog);
-                adventure.hasStarted = false;
-            }
         }
 
         public void CheckCompletion()
@@ -30,6 +18,12 @@ namespace TextAdventureV2
             while (adventure.isCompleted == false)
             {
                 GetInput();
+            }
+
+            if (adventure.pc.roomId == adventure.completionZoneId)
+            {
+                adventure.isCompleted = true;
+                Console.WriteLine(adventure.completionMessage);
             }
         }
 

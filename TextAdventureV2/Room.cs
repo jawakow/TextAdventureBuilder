@@ -13,10 +13,10 @@ namespace TextAdventureV2
         public int eastDoorRoomId;
         public int westDoorRoomId;
 
-        public bool isNorthAccessible;
-        public bool isSouthAccessible;
-        public bool isEastAccessible;
-        public bool isWestAccessible;
+        public bool isNorthAccessible = false;
+        public bool isSouthAccessible = false;
+        public bool isEastAccessible = false;
+        public bool isWestAccessible = false;
 
         public bool isDark;
         public Item[] contents;

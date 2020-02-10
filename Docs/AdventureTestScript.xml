@@ -19,38 +19,59 @@
 			<name> Cave entrance </name>
 			<description> It is the entrance to a dark musky cave </description>
 			<contents>
-				<item>a torch</item>
-				<item> a big rock </item>
-				<item> bat </item>
+				<item>
+					<name>A torch</name>
+					<description> A fiery torch				
+					</description>
+				</item>
+				<item>
+					<name>a big rock</name>
+					<description>a massive boulder</description>
+				</item>
+				<item>
+					<name>bat</name>
+					<description> a small fruit bad</description>>
+				</item>
 			</contents>
 			<roomId> 1 </roomId>
 			<northDoorRoomId> 0 </northDoorRoomId>
-			<northDoorIsAccessible> False </northDoorIsAccessible>
+			<isNorthAccessible> False </isNorthAccessible>
 			<southDoorRoomId> 2 </southDoorRoomId>
-			<southDoorIsAccessible> true </southDoorIsAccessible>
+			<isSouthAccessible> true </isSouthAccessible>
 			<eastDoorRoomId> 0 </eastDoorRoomId>
-			<eastDoorIsAcessible> false </eastDoorIsAcessible>
+			<isEastAcessible> false </isEastAcessible>
 			<westDoorRoomId> 0 </westDoorRoomId>
-			<westDoorIsAccessible> false </westDoorIsAccessible>
-		</room>
+			<isWestAccessible> false </isWestAccessible>
+	</room>
 		
 		<room>
 			<name>Cave foyeur </name>
 			<description> It a dim lightly </description>
 			<contents>
-				<item>a torch</item>
-				<item> a big rock </item>
-				<item> bat </item>
+				<item>
+					<name>A torch</name>
+					<description>
+						A fiery torch
+					</description>
+				</item>
+				<item>
+					<name>a big rock</name>
+					<description>a massive boulder</description>
+				</item>
+				<item>
+					<name>bat</name>
+					<description> a small fruit bad</description>>
+				</item>
 			</contents>
 			<roomId>2</roomId>
 			<northDoorRoomId> 1 </northDoorRoomId>
-			<northDoorIsAccessible> true </northDoorIsAccessible>
+			<isNorthAccessible> true </isNorthAccessible>
 			<southDoorRoomId>0 </southDoorRoomId>
-			<southDoorIsAccessible> false</southDoorIsAccessible>
+			<isSouthAccessible> false</isSouthAccessible>
 			<eastDoorRoomId> 0 </eastDoorRoomId>
-			<eastDoorIsAcessible> false</eastDoorIsAcessible>
+			<isEastAcessible> false</isEastAcessible>
 			<westDoorRoomId> 0 </westDoorRoomId>
-			<westDoorIsAccessible> false</westDoorIsAccessible>
+			<isWestAccessible> false</isWestAccessible>
 		</room>
 	</rooms>
 </adventure>
