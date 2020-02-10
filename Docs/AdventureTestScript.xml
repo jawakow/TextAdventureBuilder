@@ -1,22 +1,21 @@
-<Adventure>
+<adventure>
 	<name>Test adventure</name>
 	<description>test adventure description</description>
 	<openingDialog> test dialog</openingDialog>
 	<completionZoneId>3</completionZoneId>
 	<completionMessage> you win</completionMessage>
 	
-	<Player>
+	<player>
 		<name> Test Player </name>
 		<description> A Test adventurer in a dark land </description>
 		<location></location>
-		<inventory>
-		</inventory>
+		<inventory></inventory>
 		<health>100</health>
 		<weapon></weapon>
-	</Player>
+	</player>
 	
-	<Rooms>
-		<Room>
+	<rooms>
+		<room>
 			<name> Cave entrance </name>
 			<description> It is the entrance to a dark musky cave </description>
 			<contents>
@@ -25,17 +24,17 @@
 				<item> bat </item>
 			</contents>
 			<roomId> 1 </roomId>
-			<northDoorRoomId> null </northDoorRoomId>
-			<northDoorIsAccessible> false </northDoorIsAccessible>
+			<northDoorRoomId> 0 </northDoorRoomId>
+			<northDoorIsAccessible> False </northDoorIsAccessible>
 			<southDoorRoomId> 2 </southDoorRoomId>
 			<southDoorIsAccessible> true </southDoorIsAccessible>
-			<eastDoorRoomId> null </eastDoorRoomId>
+			<eastDoorRoomId> 0 </eastDoorRoomId>
 			<eastDoorIsAcessible> false </eastDoorIsAcessible>
-			<westDoorRoomId> null </westDoorRoomId>
+			<westDoorRoomId> 0 </westDoorRoomId>
 			<westDoorIsAccessible> false </westDoorIsAccessible>
-		</Room>
+		</room>
 		
-		<Room>
+		<room>
 			<name>Cave foyeur </name>
 			<description> It a dim lightly </description>
 			<contents>
@@ -46,12 +45,12 @@
 			<roomId>2</roomId>
 			<northDoorRoomId> 1 </northDoorRoomId>
 			<northDoorIsAccessible> true </northDoorIsAccessible>
-			<southDoorRoomId>null </southDoorRoomId>
+			<southDoorRoomId>0 </southDoorRoomId>
 			<southDoorIsAccessible> false</southDoorIsAccessible>
-			<eastDoorRoomId> null </eastDoorRoomId>
+			<eastDoorRoomId> 0 </eastDoorRoomId>
 			<eastDoorIsAcessible> false</eastDoorIsAcessible>
-			<westDoorRoomId> null </westDoorRoomId>
+			<westDoorRoomId> 0 </westDoorRoomId>
 			<westDoorIsAccessible> false</westDoorIsAccessible>
-		</Room>
-	</Rooms>
-</Adventure>
+		</room>
+	</rooms>
+</adventure>

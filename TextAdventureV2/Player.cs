@@ -1,14 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Xml.Serialization;
 
 namespace TextAdventureV2
 {
 	public class Player : Character
 	{
 		public string weapon;
-		public string health;
+		public int health;
 		public int roomId;
-		Inventory inventory;
+		public Inventory inventory;
 		public List<int> location;
 
 		public Player ()
