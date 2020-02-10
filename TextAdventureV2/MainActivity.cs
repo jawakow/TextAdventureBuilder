@@ -33,8 +33,6 @@ namespace TextAdventureV2
             CheckCompletion();
         }
 
-
-
         public void GetInput()
         {
             string input = Console.ReadLine();
@@ -55,5 +53,23 @@ namespace TextAdventureV2
             adventure.pc.Move(input, room);
             Console.WriteLine();
         }
+
+        public void TakeItem(string input)
+        {
+            string command = input;
+            Room room = adventure.rooms[adventure.pc.roomId];
+            var itemList = room.contents;
+            
+            foreach (var item in itemList)
+            {
+                if (item.name == command) 
+                {
+                    adventure.pc.inventory.AddToInventory(item);
+                }
+                Console.WriteLine(item);
+            }
+        }
     }
 }
+
+

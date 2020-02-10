@@ -14,7 +14,8 @@ namespace TextAdventureV2
 		public void Run()
 		{
 			Console.Clear();
-			playername = Console.ReadLine("Enter player name");
+			Console.WriteLine("Please enter your name");
+			playerName = Console.ReadLine();
 		}
 	}
 }

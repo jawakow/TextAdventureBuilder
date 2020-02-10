@@ -9,25 +9,26 @@ namespace TextAdventureV2
     {
         static void Main(string[] args)
         {
+            XMLParser xmlParser = new XMLParser();
 
-            //Adventure adventure = new Adventure();
-            //MainActivity mainActivity = new MainActivity(adventure);
+            Adventure adventure = xmlParser.ParseXml("../../../../Docs/AdventureTestScript.xml");
+            MainActivity mainActivity = new MainActivity(adventure);
             //mainActivity.CheckCompletion();
 
-            Console.WriteLine("Hello World!");
-            XmlTextReader textReader = new XmlTextReader("../../../../Docs/AdventureTestScript.xml");
-            textReader.Read();
+            //Console.WriteLine("Hello World!");
+            //XmlTextReader textReader = new XmlTextReader("../../../../Docs/AdventureTestScript.xml");
+            //textReader.Read();
 
-            tui = new TUI();
-            tui.Run();
+            //tui = new TUI();
+            //tui.Run();
 
 
-            while (textReader.Read())
-            {
-                textReader.MoveToElement();
-                Console.WriteLine(textReader.Value);
-                Console.WriteLine(textReader.Value.GetType());
-            }
+            ////while (textReader.Read())
+            ////{
+            ////    textReader.MoveToElement();
+            ////    Console.WriteLine(textReader.Value);
+            ////    Console.WriteLine(textReader.Value.GetType());
+            ////}
 
         }
     }
