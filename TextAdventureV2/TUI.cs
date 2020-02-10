@@ -17,13 +17,30 @@ namespace TextAdventureV2
 		public void play()
 		{
 			this.welcomeScreen();
-			while (true)
+			this.setStartupPos();
+			for (int i=0; i<100; i++)
 			{
 				if (Console.KeyAvailable)
 				{
-					ConsoleKeyInfo key = Console.ReadKey(true);
-					Console.WriteLine(key.Key);
-					// this.moveToAnotherRoom(key.Key.ToString);
+					var key = Console.ReadKey().Key;
+					// Console.WriteLine(key);
+					switch (key)
+					{
+						case ConsoleKey.LeftArrow:
+							this.moveToAnotherRoom("W");
+							return;
+						case ConsoleKey.RightArrow:
+							this.moveToAnotherRoom("E");
+							return;
+						case ConsoleKey.UpArrow:
+							this.moveToAnotherRoom("N");
+							return;
+						case ConsoleKey.DownArrow:
+							this.moveToAnotherRoom("S");
+							return;
+					}
+					
+					
 				}
 			}
 
@@ -88,13 +105,34 @@ namespace TextAdventureV2
 			Console.WriteLine("│ │");
 			Console.SetCursorPosition(x_pos, y_pos + 2);
 			Console.WriteLine("└─┘");
+
+			
 		}
 
 		public void moveToAnotherRoom(string direction)
 		{
 			int origRow = Console.CursorTop;
 			int origCol = Console.CursorLeft;
+			if (direction == "S")
+			{
+				Console.WriteLine(" ");
+				Console.SetCursorPosition(origCol, origRow + 3);
+				Console.WriteLine("@");
+			}
 
+			if (direction == "N")
+			{
+				Console.WriteLine(" ");
+				Console.SetCursorPosition(origCol, origRow - 3);
+				Console.WriteLine("@");
+			}
+
+		}
+
+		public void setStartupPos()
+		{
+			Console.SetCursorPosition(2, 5);
+			Console.WriteLine("@");
 		}
 
 		

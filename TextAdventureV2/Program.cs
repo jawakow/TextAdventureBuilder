@@ -9,10 +9,14 @@ namespace TextAdventureV2
     {
         static void Main(string[] args)
         {
+            
+
             XMLParser xmlParser = new XMLParser();
 
             Adventure adventure = xmlParser.ParseXml("../../../../Docs/AdventureTestScript.xml");
             MainActivity mainActivity = new MainActivity(adventure);
+            TUI tui = new TUI();
+            tui.play();
             //mainActivity.CheckCompletion();
 
             //Console.WriteLine("Hello World!");
@@ -20,8 +24,15 @@ namespace TextAdventureV2
             //textReader.Read();
 
 
+<<<<<<< HEAD
+
+
+            //tui = new TUI();
+            //tui.Run();
+=======
             TUI tui = new TUI();
             tui.play();
+>>>>>>> 5ec36f820650dee8292318dfd77d3bd7b259b70e
 
 
 
