@@ -19,6 +19,12 @@ namespace TextAdventureV2
             {
                 GetInput();
             }
+
+            if (adventure.pc.roomId == adventure.completionZoneId)
+            {
+                adventure.isCompleted = true;
+                Console.WriteLine(adventure.completionMessage);
+            }
         }
 
         public void SearchRoom()
