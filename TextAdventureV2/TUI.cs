@@ -12,6 +12,24 @@ namespace TextAdventureV2
 		{
 		}
 
+		
+		
+		public void play()
+		{
+			this.welcomeScreen();
+			while (true)
+			{
+				if (Console.KeyAvailable)
+				{
+					ConsoleKeyInfo key = Console.ReadKey(true);
+					Console.WriteLine(key.Key);
+					// this.moveToAnotherRoom(key.Key.ToString);
+				}
+			}
+
+			
+
+		}
 		public void welcomeScreen()
 		{
 			Console.Clear();
@@ -60,7 +78,7 @@ namespace TextAdventureV2
 			Console.SetCursorPosition(30, 0);
 			Console.WriteLine("Weapons: None");
 			this.plotScreen();
-			Console.ReadKey();
+			
 		}
 		public void plotRoom(int x_pos, int y_pos)
 		{
@@ -78,6 +96,8 @@ namespace TextAdventureV2
 			int origCol = Console.CursorLeft;
 
 		}
+
+		
 
 
 

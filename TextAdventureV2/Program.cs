@@ -19,7 +19,7 @@ namespace TextAdventureV2
             textReader.Read();
 
             TUI tui = new TUI();
-            tui.welcomeScreen();
+            tui.play();
 
 
             while (textReader.Read())
