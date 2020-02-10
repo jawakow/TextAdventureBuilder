@@ -22,10 +22,17 @@ namespace TextAdventureV2
             //XmlTextReader textReader = new XmlTextReader("../../../../Docs/AdventureTestScript.xml");
             //textReader.Read();
 
+<<<<<<< HEAD
             TUI tui = new TUI();
             tui.play(mainActivity);
 
 
+=======
+
+
+
+
+>>>>>>> 44638a94ec1a37da6feaa5aa4daae351f63a7a50
 
 
 
