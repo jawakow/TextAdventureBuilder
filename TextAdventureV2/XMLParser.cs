@@ -38,20 +38,49 @@ namespace TextAdventureV2
 
             foreach (XmlNode node in roomNode)
             {
-                Room room = new Room()
+                Room room = new Room
                 {
                     name = node["name"].InnerText,
                     description = node["description"].InnerText,
                     Id = int.Parse(node["roomId"].InnerText),
                     northDoorRoomId = int.Parse(node["northDoorRoomId"].InnerText),
-                    ////isNorthAccessible = bool.Parse(node["isNorthAccessible"].InnerText),
                     southDoorRoomId = int.Parse(node["southDoorRoomId"].InnerText),
-                    ////isSouthAccessible = bool.Parse(node["isSouthAccessible"].InnerText),
                     eastDoorRoomId = int.Parse(node["eastDoorRoomId"].InnerText),
-                    ////isEastAccessible = bool.Parse(node["eastDoorIsAccessible"].InnerText),
                     westDoorRoomId = int.Parse(node["westDoorRoomId"].InnerText),
-                    ////isWestAccessible = bool.Parse(node["isWestAccessible"].InnerText),
                 };
+
+                XmlNode contentNode = roomNode.SelectSingleNode("/adventure/rooms/room/contents");
+                List<Item> contents = new List<Item>();
+                foreach (XmlNode cNode in contentNode)
+                {
+                    Item item = new Item
+                    {
+                        name = cNode["name"].InnerText,
+                        description = cNode["description"].InnerText,
+                    };
+                    contents.Add(item);
+                }
+
+                if (node["isNorthAccessible"].InnerText.ToLower().Trim() == "true")
+                {
+                    room.isNorthAccessible = true;
+                }
+
+                if (node["isSouthAccessible"].InnerText.ToLower().Trim() == "true")
+                {
+                    room.isSouthAccessible = true;
+                }
+
+                if (node["isEastAcessible"].InnerText.ToLower().Trim() == "true")
+                {
+                    room.isWestAccessible = true;
+                }
+
+                if (node["isWestAccessible"].InnerText.ToLower().Trim() == "true")
+                {
+                    room.isEastAccessible = true;
+                }
+
                 rooms.Add(room);
             }
 
